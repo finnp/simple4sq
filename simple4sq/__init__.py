@@ -21,7 +21,7 @@ def download_token(code):
     params = {
         'client_id': cred[0],
         'client_secret': cred[1],
-        'client_uri': cred[2],
+        'redirect_uri': cred[2],
         'grant_type': 'authorization_code',
         'code': code
     }
