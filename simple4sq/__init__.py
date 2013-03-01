@@ -13,7 +13,7 @@ access_token = False
 
 def oauth_url():
     parameters = (AUTH_ENDPOINT, cred[0], cred[2])
-    return '{0}?response_type=code&client_id={1}&redirect_uri={2]'.format(parameters)
+    return '{0}?response_type=code&client_id={1}&redirect_uri={2}'.format(*parameters)
 
 
 def download_token(code):
